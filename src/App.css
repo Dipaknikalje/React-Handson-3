@@ -1,38 +1,103 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   color: white;
 }
+body{
+  background:linear-gradient(to right,pink, rgb(230, 230, 80));
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;    
+}
+.top__containt{
 
-.App-link {
-  color: #61dafb;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+h1{
+  color: rgb(234, 45, 45);
+  margin: 40px;
+}
+hr{
+  width: 55vw;
+}
+.dept{
+  margin-left: -75px;
+}
+.all__inputs{
+  margin-top:80px;
+  font-size: 30px;
+  text-align: center;
+}
+input[type='submit']{
+  color: black;
+  padding: 10px 40px;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  cursor: pointer;
+  margin-top: 55px;
+}
+input[type='submit']:active{
+  background-color:#082f3b;
+  color: rgb(123, 198, 223);
+  text-align: center;
+}
+.button{
+  display: flex;
+  justify-content: center;
+}
+input[type='text'], input[type='number']{
+  padding: 3px;
+  width: 270px;
+  font-size: 15px;
+  border-radius: 5px;
+  background-color: transparent;
+  border: 2px solid #0e0d0d;
+}
+.result{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content:space-evenly;
+  align-items: center;
+  margin-top: 50px;
+  border: 2px solid #e0eaac;
+  width: 85vw;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.section{
+  margin: 25px;
+  background:linear-gradient(to right,#66c2e9,#30826f, #13d497);
+  padding: 14px;
+  font-size: 25px;
+  width: 250px;
+  border: 2px solid #161313;
+  border-radius: 10px;
+}
+.back__button{
+  color:#fff;
+  padding: 10px 40px;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  cursor: pointer;
+  margin-top: 5rem;
+}
+.back__button:active{
+  background-color:#032f3d;
+  color: rgb(133, 229, 241);
+  text-align: center;
+}
+span{
+  display: flex;
+  justify-content: center;
 }
